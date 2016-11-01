@@ -21,7 +21,6 @@ public class Card extends FrameLayout{
         LayoutParams lp = new LayoutParams(-1, -1);
         lp.setMargins(10,10,0,0);
         content.setGravity(Gravity.CENTER);
-        content.setBackgroundColor(0x33ffffff);
         addView(content,lp);
         setNum(0);
     }
@@ -37,6 +36,48 @@ public class Card extends FrameLayout{
             content.setText(" ");
         } else {
             content.setText(getNum() + "");
+        }
+
+        switch (num) {
+            case 0:
+                content.setBackgroundColor(0x33ffffff);
+                break;
+            case 2:
+                content.setBackgroundColor(0xffeee4da);
+                break;
+            case 4:
+                content.setBackgroundColor(0xffede0c8);
+                break;
+            case 8:
+                content.setBackgroundColor(0xfff2b179);
+                break;
+            case 16:
+                content.setBackgroundColor(0xfff59563);
+                break;
+            case 32:
+                content.setBackgroundColor(0xfff67c5f);
+                break;
+            case 64:
+                content.setBackgroundColor(0xfff65e3b);
+                break;
+            case 128:
+                content.setBackgroundColor(0xffedcf72);
+                break;
+            case 256:
+                content.setBackgroundColor(0xffedcc61);
+                break;
+            case 512:
+                content.setBackgroundColor(0xffedc850);
+                break;
+            case 1024:
+                content.setBackgroundColor(0xffedc53f);
+                break;
+            case 2048:
+                content.setBackgroundColor(0xffedc22e);
+                break;
+            default:
+                content.setBackgroundColor(0x33ffffff);
+                break;
         }
     }
 
