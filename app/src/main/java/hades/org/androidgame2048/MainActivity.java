@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
                     break;
                 case MyGridLayout.GAME_OVER:
                     if (score > highScore) {
-                        highScore_tv.setText(highScore + "");
+                        highScore_tv.setText(score + "");
                         SharedPreferences.Editor ed = sp.edit();
                         ed.putInt("HighScore", score);
                         ed.commit();

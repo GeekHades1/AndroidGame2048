@@ -236,6 +236,7 @@ public class MyGridLayout extends GridLayout {
         if (isFail) {
             //游戏失败
             vibrator.vibrate(500);
+
             playAudio(GAME_OVER_AD);
             new AlertDialog.Builder(getContext()).setTitle("Game Over")
                     .setMessage("少侠，请重新来过！").setPositiveButton("再试一次", new DialogInterface.OnClickListener() {
